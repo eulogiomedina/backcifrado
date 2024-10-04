@@ -51,6 +51,8 @@ app.post('/api/descifrar', (req, res) => {
 app.use('/api/schnorr', schnorrRoutes);
 app.use('/api/md5', md5Routes);
 
-app.listen(5000, () => {
-  console.log('Servidor corriendo en el puerto 5000');
+// Ajuste para usar el puerto asignado por Vercel o 5000 en local
+const port = process.env.PORT || 5000;
+app.listen(port, () => {
+  console.log(`Servidor corriendo en el puerto ${port}`);
 });

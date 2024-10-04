@@ -1,22 +1,16 @@
 {
-  "name": "server",
+  "name": "backcifrado",
   "version": "1.0.0",
-  "description": "Servidor para cifrado",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "Tu Nombre",
-  "license": "ISC",
   "dependencies": {
-    "bip-schnorr": "^0.6.7",
+    "express": "^4.17.1",
     "cors": "^2.8.5",
-    "elliptic": "^6.5.7",
-    "express": "^4.21.0"
+    "crypto": "^1.0.1"
   },
   "engines": {
-    "node": ">=16.x"
+    "node": ">=14.x"
   }
 }
